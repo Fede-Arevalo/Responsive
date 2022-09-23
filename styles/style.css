@@ -1,66 +1,109 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   color: white;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
-
 
 /* For mobile phones: */
 
+body {
+  display: flex;
+  align-items: stretch;
+
+}
+
 main {
   background-color: black;
-  
+  padding: 10px;  
+  flex-grow: 10;
 }
+
 
 header {
   background-color: rgb(0, 162, 255);
+  padding: 10px;
+  margin: 2px;
+  flex-grow: 1;
 }
 
 .hero {
   background-color: red;
+  padding: 10px;
+  margin: 2px;
+  flex-grow: 1;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;  
+  flex-grow: 1;
 }
 
 section {
   background-color: green;
+  padding: 10px;
+  margin: 2px;
+  flex-grow: 1;
 }
 
 aside {
   background-color: rgb(107, 0, 201);
+  padding: 10px;
+  margin: 2px;
+  flex-grow: 1;
 }
 
 footer {
   background-color: grey;
+  padding: 10px;
+  margin: 2px;
+  flex-grow: 1;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 1rem;
+  padding: 5px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 0.9rem;
+  padding: 5px;
 }
-
-/* .flex-container {
-  display: flex;
-  width: 80%;
-  justify-content: center;
-} */
-
-
 
 /* For tablets: */
 @media only screen and (min-width: 600px) {
- 
+
+  .flex-container {
+    flex-direction: row;      
+  }
+
+  h1 {
+    font-size: 1.6rem;    
+  }
+  
+  p {
+    font-size: 1.2rem;    
+  }
   
 }
 
-
-
 /* For desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 821px) {
 
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    
+  }
 
+  section {
+    flex: 2;
+    margin-left: 5%;
+  }
+  
+  aside {
+    flex: 1;
+    margin-right: 5%;
+  }
 
 }
