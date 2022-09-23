@@ -16,6 +16,7 @@ main {
   background-color: black;
   padding: 10px;  
   flex-grow: 10;
+  min-height: 70vh;
 }
 
 
@@ -44,6 +45,7 @@ section {
   padding: 10px;
   margin: 2px;
   flex-grow: 1;
+
 }
 
 aside {
@@ -98,12 +100,12 @@ p {
 
   section {
     flex: 2;
-    margin-left: 5%;
+    max-width: 50%;
   }
   
   aside {
     flex: 1;
-    margin-right: 5%;
+    max-width: 20%;
   }
 
 }
